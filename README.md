@@ -7,7 +7,7 @@ We wanted to commemorate the soldiers who lost their lives a century ago, and th
 We used this simple Python script to run a bot on the account [@OnlineCenotaph](https://www.twitter.com/onlinecenotaph) on October 12, 2017. Our source data, which we saved to a text file, was the maniuplated results of a query to [our SPARQL endpoint](http://yasgui.org/short/rJqj_gNR-).
 
 ## Code
-`tweetlines.py` takes a text file[^1] and, using Twitter's own Python library, tweets it line-by-line at the rate of one per minute. The code expects a file called `settings.py` which should contain Twitter API credentials.
+`tweetlines.py` takes a text file<sup>1</sup> and, using Twitter's own Python library, tweets it line-by-line at the rate of one per minute. The code expects a file called `settings.py` which should contain Twitter API credentials.
 
 ## Results
 After a few hiccups owing to the rate at which we initially set the bot to tweet (once every 40 seconds), our bot got underway and tweeted consistently until late into the night. Over the 24-hour period, the account earned more than 15,500 impressions, outperforming our expectations. It was also mentioned in news roundups of events on the day, such as [this one from Newshub](http://www.newshub.co.nz/home/new-zealand/2017/10/live-updates-passchendaele-memorial-ceremony.html).
@@ -18,4 +18,4 @@ After a few hiccups owing to the rate at which we initially set the bot to tweet
 
 
 #### Notes
-[^1]: Our file is called `849.txt` because it lists 849 servicemen who were killed. Many sources list 846 servicemen, however [Online Cenotaph](http://www.aucklandmuseum.com/cenotaph) returns 849 records for a query based on "1917-10-22" as date of death.
+<sup>1</sup>: Our file is called `849.txt` because it lists 849 servicemen who were killed. Many sources list 846 servicemen, however [Online Cenotaph](http://www.aucklandmuseum.com/cenotaph) returns 849 records for a query based on "1917-10-22" as date of death.
